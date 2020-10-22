@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void doCalc(View view) {
-
         //switching activity
         Intent resultActivity = new Intent(view.getContext(), bmi_result.class);
 
@@ -37,9 +36,8 @@ public class MainActivity extends AppCompatActivity {
         {
             startActivity(resultActivity);
         }
-        else
-        {
-            Toast.makeText(this, "Please enter realistic values", Toast.LENGTH_LONG ).show();
+        else {
+            Toast.makeText(this, "Please enter realistic values", Toast.LENGTH_LONG).show();
         }
 
     }
